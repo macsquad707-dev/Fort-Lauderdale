@@ -4,11 +4,12 @@ from discord.ext import commands
 import re
 import threading
 import time
+import os
 
 app = Flask(__name__)
 
 # --- CONFIGURATION ---
-TOKEN = 'MTQ5NDk1MzYyMDgxNzU4MDIxMw.G_ZsaU.OQPcHDL4zGB_eYZrlgSV34ieg_RstubhYdsgIo'
+TOKEN = os.getenv('TOKEN')
 PING_CHANNEL_ID = 1494916192811614269 
 ALLOWED_ROLES = [1494585525431173150, 1494585579503878225]
 
